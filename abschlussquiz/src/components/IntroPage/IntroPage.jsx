@@ -27,7 +27,7 @@ const IntroPage = () => {
   return (
     <div className="quiz-wrapper">
       <div className="mayor-container">
-        <img src="../assets/mayor.png" alt="Mayor" />
+        <img src="../../assets/mayor.png" alt="Mayor" />
       </div>{" "}
       <div className="quiz-container">
         <div>
@@ -40,7 +40,7 @@ const IntroPage = () => {
         </button>
       </div>
       <div className="damsoff-container">
-        <img src="../assets/damsoff.png" alt="Damsoff" />
+        <img src="./src/assets/damsoff.png" alt="Damsoff" />
       </div>{" "}
     </div>
   );
