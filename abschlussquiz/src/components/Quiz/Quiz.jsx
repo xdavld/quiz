@@ -103,7 +103,7 @@ const Quiz = ({ questions }) => {
   return (
     <div className="quiz-wrapper">
       <div className="mayor-container">
-        <img src="./src/assets/mayor.png" alt="Mayor" />
+        <img src="/images/mayor.png" alt="Mayor" />
       </div>
       <div className="quiz-container">
         {!showResult ? (
@@ -137,7 +137,7 @@ const Quiz = ({ questions }) => {
         )}
       </div>
       <div className="damsoff-container">
-        <img src="./src/assets/damsoff.png" alt="Damsoff" />
+        <img src="/images/damsoff.png" alt="Damsoff" />
       </div>
     </div>
   );
