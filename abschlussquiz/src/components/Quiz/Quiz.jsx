@@ -13,7 +13,7 @@ const Quiz = ({ questions }) => {
     const [result, setResult] = useState(resultInitialState);
     const [showResult, setShowResult] = useState(false);
     const [showAnswerTimer, setShowAnswerTimer] = useState(true);
-    const {inputAnswer, setInputAnswer} = useState("");
+    const [inputAnswer, setInputAnswer] = useState("");
 
     const { question, choices, correctAnswer, type } = questions[currentQuestion];
 
@@ -29,6 +29,7 @@ const Quiz = ({ questions }) => {
     const onClickNext = (finalAnswer) => {
         setAnswerIdx(null);
         setShowAnswerTimer(false);
+        setInputAnswer("");
         setResult((prev) => 
         finalAnswer
             ? {
@@ -65,7 +66,6 @@ const Quiz = ({ questions }) => {
 
     const handleInputChange = (event) => {
         setInputAnswer(event.target.value);
-
         if (event.target.value === correctAnswer) {
             setAnswer(true);
         } else {
@@ -103,7 +103,9 @@ const Quiz = ({ questions }) => {
         <div className="quiz-container">
           {!showResult ? (
             <>
-            {showAnswerTimer && <AnswerTimer duration={10} onTimeUp={handleTimeUp}/>}
+              {showAnswerTimer && (
+                <AnswerTimer duration={10} onTimeUp={handleTimeUp} />
+              )}
               <div>
                 <span className="active-question-no">
                   {currentQuestion + 1}
@@ -112,7 +114,10 @@ const Quiz = ({ questions }) => {
                 <h2>{question}</h2>
                 {getAnswerUI()}
                 <div className="footer">
-                  <button onClick={() => onClickNext(answer)} disabled={answerIdx === null && !inputAnswer}>
+                  <button
+                    onClick={() => onClickNext(answer)}
+                    disabled={!inputAnswer && answerIdx === null}
+                  >
                     {currentQuestion === questions.length - 1
                       ? "Beenden"
                       : "Weiter"}
@@ -121,7 +126,11 @@ const Quiz = ({ questions }) => {
               </div>
             </>
           ) : (
-            <Result result={result} onTryAgain={onTryAgain} totalQuestions={questions.length}></Result>
+            <Result
+              result={result}
+              onTryAgain={onTryAgain}
+              totalQuestions={questions.length}
+            ></Result>
           )}
         </div>
         <div className="damsoff-container">

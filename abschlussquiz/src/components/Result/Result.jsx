@@ -25,9 +25,9 @@ const Result = ({totalQuestions, result, onTryAgain}) => {
     };
 
     const handleTryAgain = () => { 
-        onTryAgain();
         setShowScores(false);
         setHighScores([]);
+        onTryAgain();
     };
 
     return (
@@ -71,10 +71,10 @@ const Result = ({totalQuestions, result, onTryAgain}) => {
               <tbody>
                 {highScores.map((highScores, i) => {
                 return (
-                    <tr>
-                    <td>{i + 1}</td>
-                    <td>{highScores.name}</td>
-                    <td>{highScores.score}</td>
+                    <tr key={`${highScores.score}${highScores.name}${i}`}>
+                        <td>{i + 1}</td>
+                        <td>{highScores.name}</td>
+                        <td>{highScores.score}</td>
                     </tr>
                     )
                 })
