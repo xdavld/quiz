@@ -2,8 +2,6 @@ import { useState } from "react";
 import { resultInitialState } from "../../constants";
 import AnswerTimer from "../AnswerTimer/AnswerTimer";
 import Result from "../Result/Result";
-
-
 import "./Quiz.scss";
 
 const Quiz = ({ questions }) => {
@@ -21,6 +19,8 @@ const Quiz = ({ questions }) => {
   }
 
   const { question, choices, correctAnswer, type } = questions[currentQuestion];
+
+  console.log(questions);
 
   const onAnswerClick = (answer, index) => {
     setAnswerIdx(index);
