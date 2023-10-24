@@ -4,7 +4,26 @@ import AnswerTimer from "../AnswerTimer/AnswerTimer";
 import Result from "../Result/Result";
 import "./Quiz.scss";
 
-const Quiz = ({ questions }) => {
+const Quiz = () => {
+  const [questions, setQuestions] = useState([]);
+
+  useEffect(() => {
+    getQuestions();
+  }, []);
+
+  const getQuestions = async () => {
+    try {
+      const response = await fetch(
+        "https://644982a3e7eb3378ca4ba471.mockapi.io/questions"
+      );
+      const questionsResponse = await response.json();
+      console.log(questionsResponse);
+      setQuestions(questionsResponse);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answerIdx, setAnswerIdx] = useState(null);
   const [answer, setAnswer] = useState(null);
