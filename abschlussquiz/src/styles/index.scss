@@ -1,0 +1,19 @@
+@import "./vars.scss";
+
+@font-face {
+    font-family: 'PixelFont';
+    src: url('./src/assets/Pokemon_X_and_Y.ttf') format('truetype'); 
+}
+
+body{
+    font-family: 'PixelFont', sans-serif;
+    background: linear-gradient(0deg, $primary 0.03%, $accent);
+    color: $foreground;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 30px;
+    height: 100vh;
+
+    margin-left: 3%;
+}
+
