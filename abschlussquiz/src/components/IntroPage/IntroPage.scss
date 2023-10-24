@@ -1,0 +1,57 @@
+@import "../../styles/vars.scss";
+
+.quiz-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content:center
+}
+
+.mayor-container {
+    width: 50%; 
+    max-height: 600px;
+    object-fit: contain;
+
+    margin-top: 100px;
+}
+
+.damsoff-container{
+    width: 50%; 
+    max-height: 600px;
+    object-fit: contain;
+
+    margin-top: 130px;
+}
+
+.quiz-container {
+    width: 500px;
+    background: $bg;
+    border-radius: 4px;
+    margin-top: 7cqi;
+    padding: 30px 60px;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    align-items: center;
+
+    h2{
+        font-size: 30px;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    button {
+        background: linear-gradient(0deg, $primary 0.03%, $accent);
+        border-radius: 9px;
+        font-size: 18px;
+        color: $bg;
+        padding: 10px 42px;
+        outline: none;
+        border: none;
+        margin-top: 15px;
+        cursor: pointer;
+        align-items: center;
+    }
+}
+    
+
+    
