@@ -11,13 +11,8 @@ import Quiz from "./components/Quiz/Quiz";
 import { jsQuizz } from "./constants";
 
 function App() {
-  const [questions, setQuestions] = useState([]);
 
-  useEffect(() => {
-    getQuestions();
-  }, []);
-
-  const getQuestions = async () => {
+  const questions = async () => {
     try {
       const response = await fetch(
         "https://644982a3e7eb3378ca4ba471.mockapi.io/questions"
