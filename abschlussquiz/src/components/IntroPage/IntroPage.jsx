@@ -28,7 +28,7 @@ const IntroPage = () => {
     <div className="quiz-wrapper">
       <div className="mayor-container">
         <img
-          src="/images/mayor.png"
+          src={process.env.PUBLIC_URL + '/images/mayor.png'}
           alt="Mayor"
         />
       </div>{" "}
