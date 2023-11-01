@@ -4,19 +4,23 @@
     text-align: center;
 
     h3{
-        font-size: 28px;
+        font-size: 22px;
         letter-spacing: 1.4px;
         text-align: center;
     }
 
     p{
-        font-size: 26px;
+        font-size: 18px;
         font-weight: 500;
 
         span{
             color: $primary;
-            font-size: 32px;
+            font-size: 20px;
         }
+    }
+
+    #safe-text{
+        font-size: 16px;
     }
 
     table{
@@ -24,7 +28,7 @@
         text-align: left;
         margin: 50px auto 20px;
         border-collapse: collapse;
-        font-size: large;
+        font-size: 14px;
 
         tr{
             border: 1px solid

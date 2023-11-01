@@ -20,7 +20,7 @@ function App() {
   const getQuestions = async () => {
     try {
       const response = await fetch(
-        "https://644982a3e7eb3378ca4ba471.mockapi.io/questions"
+        "https://6542b9c201b5e279de1f7c41.mockapi.io/questions"
       );
       const questionsResponse = await response.json();
       console.log(questionsResponse);

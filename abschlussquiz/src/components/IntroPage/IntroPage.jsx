@@ -9,7 +9,7 @@ const IntroPage = () => {
     "Du hast 30 Sekunden Zeit, um jede Frage zu beantworten.",
     "Es gibt 10 Fragen insgesamt.",
     "Es gibt sowohl Multiple-Choice-Fragen als auch Fragen, bei denen du die Antwort selbst eingeben musst.",
-    "Am Ende kannst du deinen Namen eingeben und deine Punktzahl zu speichern.",
+    "Am Ende kannst du deinen Namen eingeben, um deine Punktzahl zu speichern und dein Zertifikat herunterzuladen.",
     "Viel Glück und viel Spaß!",
   ];
 

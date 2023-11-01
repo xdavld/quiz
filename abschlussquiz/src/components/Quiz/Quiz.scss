@@ -3,7 +3,9 @@
 .quiz-wrapper {
     display: flex;
     align-items: center;
-    justify-content:center
+    justify-content:center;
+    overflow: hidden; /* Prevent content from pushing it down */
+    position: relative;
 }
 
 .mayor-container {
@@ -12,6 +14,8 @@
     object-fit: contain;
 
     margin-top: 100px;
+    margin-right: 45%;
+    position: fixed;
 }
 
 .damsoff-container{
@@ -20,6 +24,9 @@
     object-fit: contain;
 
     margin-top: 130px;
+    margin-left: 80%;
+    position: fixed;
+
 }
 
 .quiz-container {
