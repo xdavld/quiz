@@ -2,8 +2,6 @@ import './Result.scss';
 import { useState, useEffect } from 'react';
 import { PDFDocument, rgb, StandardFonts } from "pdf-lib";
 
-import pdf from "../../../public/zertifikat.pdf";
-
 const Result = ({totalQuestions, result, onTryAgain}) => {
 
     const [name, setName] = useState("");
@@ -34,7 +32,7 @@ const Result = ({totalQuestions, result, onTryAgain}) => {
     };
 
     const handleGeneratePDF = async () => {
-      const url = pdf;
+      const url = "../../../public/zertifikat.pdf";
       const existingPdfBytes = await fetch(url).then((res) =>
         res.arrayBuffer()
       );
