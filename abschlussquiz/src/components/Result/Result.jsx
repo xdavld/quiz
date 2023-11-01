@@ -32,7 +32,7 @@ const Result = ({totalQuestions, result, onTryAgain}) => {
     };
 
     const handleGeneratePDF = async () => {
-      const url = "../../../public/zertifikat.pdf";
+      const url = "/zertifikat.pdf";
       const existingPdfBytes = await fetch(url).then((res) =>
         res.arrayBuffer()
       );

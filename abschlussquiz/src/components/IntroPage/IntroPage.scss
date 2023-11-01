@@ -4,9 +4,9 @@
     display: flex;
     align-items: center;
     justify-content:center;
-    height: 70vh; /* Set the height to fill the viewport */
-    overflow: hidden; /* Prevent content from pushing it down */
     position: relative;
+
+    height: fit-content;
 }
 
 .mayor-container {
@@ -14,7 +14,7 @@
     max-height: 600px;
     object-fit: contain;
 
-    margin-top: 100px;
+    margin-top: 20%;
     margin-right: 45%;
     position: fixed;
 }
