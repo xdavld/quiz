@@ -2,7 +2,7 @@ import './Result.scss';
 import { useState, useEffect } from 'react';
 import { PDFDocument, rgb, StandardFonts } from "pdf-lib";
 
-import pdf from "../../assets/Zertifikat.pdf";
+import pdf from "../../../public/zertifikat.pdf";
 
 const Result = ({totalQuestions, result, onTryAgain}) => {
 
