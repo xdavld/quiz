@@ -7,7 +7,7 @@ const IntroPage = () => {
   const speechBubbles = [
     "Herzlich willkommen! Ich habe bereits gehört, dass Sie wichtige Informationen aus der Wissenschaft gesammelt haben.",
     "Das ist genau das, was wir jetzt brauchen, um unsere Insel vor den Auswirkungen des Klimawandels zu schützen.",
-    "Die Unzufriedenheit der Bürger wächst, und es ist dringend notwendig, Maßnahmen zu ergreifen, um ihre Sorgen anzugehen..",
+    "Die Unzufriedenheit der Bürger wächst, und es ist dringend notwendig, Maßnahmen zu ergreifen, um ihre Sorgen anzugehen.",
     "Bitte erzählen Sie mir, was Sie in Ihrer Forschung herausgefunden haben und welche Schritte wir unternehmen können, um unsere Gemeinschaft optimal auf die neuen Herausforderungen vorzubereiten.",
     "Gemeinsam können wir Lösungen finden, um unsere Insel widerstandsfähiger gegen den Klimawandel zu machen und die Lebensqualität unserer Bürger zu verbessern.",
     "Beginne nun mit dem Abschlussquiz!",

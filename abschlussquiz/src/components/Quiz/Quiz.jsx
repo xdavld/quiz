@@ -2,6 +2,7 @@ import { useState } from "react";
 import { resultInitialState } from "../../constants";
 import AnswerTimer from "../AnswerTimer/AnswerTimer";
 import Result from "../Result/Result";
+import ResultText from "../ResultText/ResultText";
 import "./Quiz.scss";
 
 const Quiz = ({ questions }) => {
@@ -49,7 +50,6 @@ const Quiz = ({ questions }) => {
     if (currentQuestion !== questions.length - 1) {
       setCurrentQuestion((prev) => prev + 1);
     } else {
-      setCurrentQuestion(0);
       setShowResult(true);
     }
 
@@ -127,11 +127,11 @@ const Quiz = ({ questions }) => {
             </div>
           </>
         ) : (
-          <Result
+          <ResultText
             result={result}
             onTryAgain={onTryAgain}
             totalQuestions={questions.length}
-          ></Result>
+          ></ResultText>
         )}
       </div>
       <div className="damsoff-container">
@@ -139,7 +139,6 @@ const Quiz = ({ questions }) => {
       </div>
     </div>
   );
-}
+};
 
 export default Quiz;
-
