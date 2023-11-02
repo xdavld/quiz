@@ -21,12 +21,12 @@
     max-height: 600px;
     object-fit: contain;
     margin-top: 100px;
-    flex: 0 0 45%; /* Adjust the width */
+    flex: 0 0 40%; /* Adjust the width */
 }
 
 .quiz-container {
     flex: 0 0 30%;
-    width: 700px;
+    width: 900px;
     background: $bg;
     border-radius: 4px;
     padding: 30px 60px;
@@ -47,7 +47,7 @@
     }
 
     h2{
-        font-size: 22px;
+        font-size: 20px;
         font-weight: 500;
         margin: 0;
     }
@@ -63,7 +63,7 @@
             background: $bg;
             border: 1px solid $disabled;
             border-radius: 16px;
-            padding: 11px;
+            padding: 6px;
             margin-top: 15px;
 
             cursor: pointer;
