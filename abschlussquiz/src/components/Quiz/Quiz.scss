@@ -3,31 +3,29 @@
 .quiz-wrapper {
     display: flex;
     align-items: center;
-    justify-content:center;
-    height: 80%; 
+    justify-content: center;
+    height: 80%;
     position: relative;
+
+    margin-left: 10%;
 }
 
 .mayor-container {
-    margin-right: 40%;
-
     max-height: 600px;
     object-fit: contain;
     margin-top: 100px;
-    position: fixed;
+    flex: 0 0 25%; /* Adjust the width */
 }
 
-.damsoff-container{
-    margin-left: 75%;
-
+.damsoff-container {
     max-height: 600px;
     object-fit: contain;
     margin-top: 100px;
-    position: fixed;
-
+    flex: 0 0 45%; /* Adjust the width */
 }
 
 .quiz-container {
+    flex: 0 0 30%;
     width: 500px;
     background: $bg;
     border-radius: 4px;
