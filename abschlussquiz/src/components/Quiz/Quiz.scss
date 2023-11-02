@@ -9,22 +9,20 @@
 }
 
 .mayor-container {
-    width: 50%; 
+    margin-right: 40%;
+
     max-height: 600px;
     object-fit: contain;
-
     margin-top: 100px;
-    margin-right: 45%;
     position: fixed;
 }
 
 .damsoff-container{
-    width: 50%; 
+    margin-left: 75%;
+
     max-height: 600px;
     object-fit: contain;
-
-    margin-top: 130px;
-    margin-left: 80%;
+    margin-top: 100px;
     position: fixed;
 
 }
@@ -33,10 +31,10 @@
     width: 500px;
     background: $bg;
     border-radius: 4px;
-    margin-top: 7cqi;
     padding: 30px 60px;
     box-sizing: border-box;
     position: relative;
+    margin-top: 7ch;
 
     .active-question-no{
         font-size: 42px;

@@ -10,22 +10,18 @@
 }
 
 .mayor-container {
-    width: 50%; 
+    width: 50%;
     max-height: 600px;
     object-fit: contain;
-
-    margin-top: 20%;
-    margin-right: 45%;
+    margin-top: 100px;
     position: fixed;
 }
 
 .damsoff-container{
-    width: 50%; 
+    width: 50%;
     max-height: 600px;
     object-fit: contain;
-
-    margin-top: 130px;
-    margin-left: 80%;
+    margin-top: 100px;
     position: fixed;
 
 }
@@ -34,7 +30,7 @@
     width: 500px;
     background: $bg;
     border-radius: 4px;
-    margin-top: 7cqi;
+    margin-top: 7ch;
     padding: 30px 60px;
     box-sizing: border-box;
     position: relative;
