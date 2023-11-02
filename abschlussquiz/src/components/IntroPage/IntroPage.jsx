@@ -11,7 +11,7 @@ const IntroPage = () => {
     "Bitte erzählen Sie mir, was Sie in Ihrer Forschung herausgefunden haben und welche Schritte wir unternehmen können, um unsere Gemeinschaft optimal auf die neuen Herausforderungen vorzubereiten.",
     "Gemeinsam können wir Lösungen finden, um unsere Insel widerstandsfähiger gegen den Klimawandel zu machen und die Lebensqualität unserer Bürger zu verbessern.",
     "Beginne nun mit dem Abschlussquiz!",
-    "Anbei eine kurze Erklärung, wie das Quiz funktioniert:",
+    "Anbei eine kurze Erklärung, wie das Quiz funktioniert.",
     "Du hast 30 Sekunden Zeit, um jede Frage zu beantworten.",
     "Es gibt 10 Fragen insgesamt.",
     "Es gibt sowohl Multiple-Choice-Fragen als auch Fragen, bei denen du die Antwort selbst eingeben musst.",
