@@ -10,30 +10,28 @@
   {
     id: 1,
     question:
-      "Erhöhte “Blutviskosität” kann aufgrund von Wasserverlust oder Veränderungen in der Blutgerinnung zu vermehrter _________ führen.",
+      "Erhöhte Blutviskosität kann aufgrund von Wasserverlust oder Veränderungen in der Blutgerinnung zu vermehrter _________ führen.",
     type: "FIB",
     correctAnswer: "Thrombose",
   },
   {
     id: 2,
-    question:
-      "Wenn sich eine Person ungewöhnlich unruhig verhält, heiße, ____________ oder Kopfschmerzen hat, kann dies auf einen Hitzschlag hinweisen.",
-    choices: ["Schneebedeckte", "Glatte", "rote und trockene Haut", "Feuchte"],
+    question: "Was sind Extremwetterereignisse",
+    choices: [
+      "Ereignisse, die selten oder nie auftreten",
+      "Wetterbedingungen, die in einem bestimmten Gebiet als normal gelten",
+      "Wetterphänomene, die intensiver sind als üblich",
+      "Tägliche Wetteränderungen",
+    ],
     type: "MCQs",
     correctAnswer: "rote und trockene Haut",
   },
   {
     id: 3,
     question:
-      "Welche Auswirkungen können Extremwetterereignisse auf die kritische Infrastruktur haben?",
-    choices: [
-      "Verbesserung der Strom- und Wasserversorgung",
-      "Keine Auswirkungen auf die Infrastruktur",
-      "Ausfall der kritischen Infrastruktur",
-      "Steigerung der Infrastruktur-Effizienz",
-    ],
-    type: "MCQs",
-    correctAnswer: "Ausfall der kritischen Infrastruktur",
+      "Wie nennt man den Effekt, wenn Gasförmige Atmosphärenbestandteile, die Wärmestrahlung absorbieren und die Erdatmosspähre erwärmen? ___________",
+    type: "FIB",
+    correctAnswer: "Treibhauseffekt",
   },
   {
     id: 4,
@@ -52,30 +50,23 @@
   {
     id: 5,
     question:
-      "Warum sind Personen, die Antidepressiva oder Beta-Blocker einnehmen, bei Hitze besonders betroffen?",
+      "Wie viel könnte der Klima-Fußabdruck der Landwirtschaft in Deutschland reduziert werden, wenn sich alle nach der Planetary Health Diet ernähren würden",
     choices: [
-      "Weil diese Medikamente die Körpertemperatur erhöhen",
-      "Weil sie eine natürliche Hitzeunverträglichkeit verursachen",
-      "Weil diese Medikamente die Reaktion des Körpers auf Hitze beeinflussen",
-      "Weil sie den Körper vor Hitze schützen",
+      "10 Mio. Tonnen CO2-Äquivalente",
+      "40 Mio. Tonnen CO2-Äquivalente",
+      "23 Mio. Tonnen CO2-Äquivalente",
+      "95 Mio. Tonnen CO2-Äquivalente",
     ],
     type: "MCQs",
-    correctAnswer:
-      "Weil diese Medikamente die Reaktion des Körpers auf Hitze beeinflussen",
+    correctAnswer: "23 Mio. Tonnen CO2-Äquivalente",
   },
   {
     id: 6,
     question:
-      "Warum sind Personen mit Schizophrenie möglicherweise gefährdet, gefährliche Temperaturanstiege nicht wahrzunehmen?",
-    choices: [
-      "Aufgrund einer natürlichen Hitzeunverträglichkeit",
-      "Weil sie Hitze generell meiden",
-      "Wegen einer vermuteten Beeinträchtigung der Thermoregulation",
-      "Aufgrund einer gesteigerten Wahrnehmung von Temperaturänderungen",
-    ],
+      "Welcher Teil der landwirtschaftlichen Emissionen in Deutschland wird hauptsächlich von der Tierhaltung verursacht?",
+    choices: ["40%", "70%", "80%", "23%"],
     type: "MCQs",
-    correctAnswer:
-      "Wegen einer vermuteten Beeinträchtigung der Thermoregulation",
+    correctAnswer: "80",
   },
   {
     id: 7,
@@ -83,5 +74,25 @@
       "Das Vorhandensein einer ______________ ist auf menschliche Aktivitäten zurückzuführen. Dazu gehören die Wärmeabsorption durch Asphalt und Gebäude sowie im Allgemeinen weniger Grünflächen in städtischen Gebieten.",
     type: "FIB",
     correctAnswer: "Urban Heat Island",
+  },
+  {
+    id: 8,
+    question:
+      "Was ist das Ziel der Planetary Health Diet in Bezug auf die Umwelt?",
+    choices: [
+      "Die Umweltbelastung durch Ernährung zu erhöhen",
+      "Die Umweltauswirkungen der Ernährung zu reduzieren",
+      "Die Tierwelt zu gefährden",
+      "Den Wasserverbrauch in der Landwirtschaft zu steigern",
+    ],
+    type: "MCQs",
+    correctAnswer: "Die Umweltauswirkungen der Ernährung zu reduzieren",
+  },
+  {
+    id: 9,
+    question:
+      "Wie nennt man die Verlagerung von Gemeinschaften aufgrund unbewohnbarer Gebiete infolge des Meeresspiegelanstiegs? _______________",
+    type: "FIB",
+    correctAnswer: "Umsiedlung",
   },
 ];

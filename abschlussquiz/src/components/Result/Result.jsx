@@ -102,16 +102,13 @@ const Result = ({totalQuestions, result, onTryAgain}) => {
       <div className="result">
         <h3>Result</h3>
         <p>
-          Total Questions: <span>{totalQuestions}</span>
+          Punktzahl: <span>{result.correctAnswers - result.wrongAnswers}</span>
         </p>
         <p>
-          Total Score: <span>{result.score}</span>
+          Korrekte Antworten: <span>{result.correctAnswers}</span>
         </p>
         <p>
-          Correct Answers: <span>{result.correctAnswers}</span>
-        </p>
-        <p>
-          Wrong Answers: <span>{result.wrongAnswers}</span>
+          Falsche Antworten: <span>{result.wrongAnswers}</span>
         </p>
         <button onClick={handleTryAgain}>Nochmal</button>
         {!showScores ? (
@@ -138,18 +135,19 @@ const Result = ({totalQuestions, result, onTryAgain}) => {
               </thead>
               <tbody>
                 {highScores.map((highScores, i) => {
-                return (
+                  return (
                     <tr key={`${highScores.score}${highScores.name}${i}`}>
-                        <td>{i + 1}</td>
-                        <td>{highScores.name}</td>
-                        <td>{highScores.score}</td>
+                      <td>{i + 1}</td>
+                      <td>{highScores.name}</td>
+                      <td>{highScores.score}</td>
                     </tr>
-                    )
-                })
-                }
+                  );
+                })}
               </tbody>
             </table>
-            <button onClick={handleGeneratePDF}>Zertifikat herunterladen</button>
+            <button onClick={handleGeneratePDF}>
+              Zertifikat herunterladen
+            </button>
           </>
         )}
       </div>
